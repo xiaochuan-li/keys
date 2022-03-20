@@ -1,12 +1,12 @@
 from setuptools import setup
 from setuptools import find_packages
 
-with open("README.md") as f:
+with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 VERSION = '1.1.2'
 
 setup(
-    name='Keys',
+    name='keys-manager',
     version=VERSION,
     packages=find_packages(),
     
