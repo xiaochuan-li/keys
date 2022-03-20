@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
-VERSION = '1.1.3'
+VERSION = '1.1.4'
 
 setup(
     name='keys-manager',
