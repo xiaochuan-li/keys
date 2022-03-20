@@ -1,6 +1,5 @@
 import sys
 
-from system_hotkey import SystemHotkey
 from PyQt5 import QtWidgets, QtCore, Qt
 
 import pyautogui as pag
@@ -34,11 +33,10 @@ class Qapp(QtWidgets.QMainWindow):
         super().__init__(parent)
 
         self.setWindowFlags(Qt.Qt.CustomizeWindowHint | Qt.Qt.Tool)
-        keyboard.add_hotkey('ctrl + k', self.move_to)
+        keyboard.add_hotkey("ctrl + k", self.move_to)
 
         # self.m_btn = SystemHotkey()
         # self.m_btn.register(("control", "k"), callback=lambda x: self.move_to())
-
 
         self.setVisible(False)
         self.tp = QSystemTrayIcon(self)
