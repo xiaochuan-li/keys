@@ -34,7 +34,7 @@ $ pip install keys-manager
 [MIT-link]:     https://github.com/xiaochuan-li/keys/blob/main/LICENSE
 [issues-badge]:     https://img.shields.io/github/issues/xiaochuan-li/keys
 [version-badge]:   https://img.shields.io/badge/version-1.1.2-brightgreen
-[version-link]:    https://pypi.python.org/pypi/douyin_image/
+[version-link]:    https://github.com/xiaochuan-li/keys
 [license-badge]:   https://img.shields.io/github/license/xiaochuan-li/keys
 
 [fork-badge]:   	https://img.shields.io/github/forks/xiaochuan-li/keys
