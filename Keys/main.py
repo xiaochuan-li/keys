@@ -105,6 +105,7 @@ def main():
     window = Qapp(js=js["data"])
     window.show()
     window.move_to()
+    window.showMinimized()
     app.exec_()
 
 

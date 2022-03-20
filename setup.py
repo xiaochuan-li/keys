@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
-VERSION = '1.1.4'
+VERSION = '1.1.5'
 
 setup(
     name='keys-manager',
@@ -29,7 +29,7 @@ setup(
     },
     install_requires = [
         'PyQt5==5.15.4',
-        "system-hotkey==1.0.3",
+        "keyboard==0.13.5",
         "PyAutoGUI==0.9.50"
     ],
 )
