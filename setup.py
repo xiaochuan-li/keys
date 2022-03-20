@@ -1,14 +1,22 @@
 from setuptools import setup
 from setuptools import find_packages
 
-
+with open("README.md") as f:
+    long_description = f.read()
 VERSION = '1.1.2'
 
 setup(
-    name='Keys',  # package name
-    version=VERSION,  # package version
-    description='my package',  # package description
+    name='Keys',
+    version=VERSION,
     packages=find_packages(),
+    
+    author="Xiaochuan Li",
+    author_email="lixiaochuan822@gmail.com",
+    description="A simple key manager",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/xiaochuan-li/keys",
+    
     zip_safe=False,
     package_data = {
         'Keys': ['statics/*.json', 'statics/*.png']
