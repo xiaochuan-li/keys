@@ -15,6 +15,7 @@ from PyQt5.QtCore import QStringListModel
 import subprocess
 import json
 
+import keyboard
 import os
 
 root = os.path.dirname(__file__)
@@ -33,8 +34,11 @@ class Qapp(QtWidgets.QMainWindow):
         super().__init__(parent)
 
         self.setWindowFlags(Qt.Qt.CustomizeWindowHint | Qt.Qt.Tool)
-        self.m_btn = SystemHotkey()
-        self.m_btn.register(("control", "k"), callback=lambda x: self.move_to())
+        keyboard.add_hotkey('ctrl + k', self.move_to)
+
+        # self.m_btn = SystemHotkey()
+        # self.m_btn.register(("control", "k"), callback=lambda x: self.move_to())
+
 
         self.setVisible(False)
         self.tp = QSystemTrayIcon(self)
@@ -55,6 +59,7 @@ class Qapp(QtWidgets.QMainWindow):
         self.listview.clicked.connect(self.clicked)
         self.setCentralWidget(self.listview)
         self.r_x, self.r_y = None, None
+        self.setMouseTracking(True)
 
     def move_to(self):
         x, y = pag.position()
