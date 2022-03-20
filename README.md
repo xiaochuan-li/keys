@@ -28,12 +28,12 @@ $ pip install keys-manager
 ### License
 [MIT](https://github.com/xiaochuan-li/keys/blob/main/LICENSE)
 
-[pypi-link]:    https://pypi.org/project/keys-manager/1.1.2/
-[pypi-badge]:   https://img.shields.io/badge/pypi-1.1.2-brightgreen
+[pypi-link]:    https://pypi.org/project/keys-manager/1.1.3/
+[pypi-badge]:   https://img.shields.io/badge/pypi-1.1.3-brightgreen
 
 [MIT-link]:     https://github.com/xiaochuan-li/keys/blob/main/LICENSE
 [issues-badge]:     https://img.shields.io/github/issues/xiaochuan-li/keys
-[version-badge]:   https://img.shields.io/badge/version-1.1.2-brightgreen
+[version-badge]:   https://img.shields.io/badge/version-1.1.3-brightgreen
 [version-link]:    https://github.com/xiaochuan-li/keys
 [license-badge]:   https://img.shields.io/github/license/xiaochuan-li/keys
 
